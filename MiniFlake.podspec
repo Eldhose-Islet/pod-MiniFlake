@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'MiniFlake'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'Generates time-ordered identifiers as positive 64-bit integers without synchronization.'
 
   s.description      = <<-DESC
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/cutecoder'
   s.documentation_url = 'https://github.com/adib/MiniFlake/blob/master/README.markdown'
 
-  s.swift_version = '4.0'
-  s.osx.deployment_target = "10.12"
+  s.swift_version = '5.0'
+  s.osx.deployment_target = "10.13"
   s.ios.deployment_target = "10.3"
   s.tvos.deployment_target = "10.2"
   s.watchos.deployment_target = "3.2"
