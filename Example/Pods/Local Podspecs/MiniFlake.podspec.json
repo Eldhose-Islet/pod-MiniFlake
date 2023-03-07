@@ -1,8 +1,8 @@
 {
   "name": "MiniFlake",
-  "version": "1.0.0",
-  "summary": "Generates k-ordered identifiers as positive 64-bit integers without synchronization.",
-  "description": "A Swift micro-framework for generating compact identifiers that are time ordered in distributed systems without the need for synchronization.",
+  "version": "0.0.5",
+  "summary": "Generates time-ordered identifiers as positive 64-bit integers without synchronization.",
+  "description": "A Swift micro-framework for generating compact identifiers that are time ordered without the need for synchronization. Unlike UUID-based methods, the identifiers would only be 63-bits long — hence fit as a positive number in a 64-bit integer. These identifiers are also roughly time-ordered, hence can be used as a sorting attribute to get the corresponding data objects sorted by time as well.\nInspired from Twitter Snowflake identifier-creation algorithm.",
   "homepage": "https://github.com/adib/MiniFlake.git",
   "license": {
     "type": "MIT",
@@ -12,11 +12,12 @@
     "Sasmito Adibowo": "adib@basil-salad.com"
   },
   "source": {
-    "git": "https://github.com/adib@clovermail.net/MiniFlake.git",
-    "tag": "1.0.0"
+    "git": "https://github.com/adib/MiniFlake.git",
+    "tag": "0.0.5"
   },
   "social_media_url": "https://twitter.com/cutecoder",
-  "swift_version": "4.0",
+  "documentation_url": "https://github.com/adib/MiniFlake/blob/master/README.markdown",
+  "swift_versions": "4.0",
   "platforms": {
     "osx": "10.12",
     "ios": "10.3",
@@ -24,5 +25,6 @@
     "watchos": "3.2"
   },
   "source_files": "MiniFlake/Classes/**/*",
-  "weak_frameworks": "CoreData"
+  "weak_frameworks": "CoreData",
+  "swift_version": "4.0"
 }

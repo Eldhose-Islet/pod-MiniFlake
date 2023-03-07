@@ -103,6 +103,9 @@ extension FlakeMaker: Hashable {
             return Int(instanceNumber)
         }
     }
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(instanceNumber)
+    }
 }
 
 public func ==(lhs: FlakeMaker, rhs: FlakeMaker) -> Bool {
@@ -194,7 +197,7 @@ public extension Thread {
      Returns the next ID for the current thread. Creates an ID generator if necessary in the thread-local storage.
      */
     @objc
-    public func nextFlakeID() -> Int64 {
+    func nextFlakeID() -> Int64 {
         return InProcessFlakeMaker.flakeMaker(thread:self).nextValue()
     }
 }

@@ -46,7 +46,7 @@ public extension NSManagedObjectContext {
      Returns the next ID for the managed object context. Creates an ID generator if necessary in the `userInfo` dictionary.
      */
     @objc
-    public func nextFlakeID() -> Int64 {
+    func nextFlakeID() -> Int64 {
         return InProcessFlakeMaker.flakeMaker(managedObjectContext:self).nextValue()
     }
 }

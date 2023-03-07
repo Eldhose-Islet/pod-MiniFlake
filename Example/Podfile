@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'MiniFlake_Example' do
-	platform :osx, '10.12'
+	platform :osx, '10.13'
   pod 'MiniFlake', :path => '../'
 
   target 'MiniFlake_Tests' do
